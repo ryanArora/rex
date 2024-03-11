@@ -3,9 +3,9 @@ use {clap::Parser, std::path::PathBuf};
 #[derive(Debug, Parser)]
 struct Cli {
     #[arg()]
-    input_file: Vec<PathBuf>,
-    #[arg(short, default_value = "a.out")]
-    output_file: PathBuf,
+    input_file: PathBuf,
+    #[arg(short)]
+    output_file: Option<PathBuf>,
 }
 
 fn main() {
