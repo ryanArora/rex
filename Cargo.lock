@@ -51,6 +51,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "arrayvec"
+version = "0.7.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "96d30a06541fbafbc7f82ed10c06164cfbd2c401138f6addd8404629c4b16711"
+
+[[package]]
 name = "clap"
 version = "4.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -125,6 +131,7 @@ name = "rex"
 version = "0.1.0"
 dependencies = [
  "clap",
+ "utf8-chars",
 ]
 
 [[package]]
@@ -149,6 +156,15 @@ name = "unicode-ident"
 version = "1.0.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3354b9ac3fae1ff6755cb6db53683adb661634f67557942dea4facebec0fee4b"
+
+[[package]]
+name = "utf8-chars"
+version = "3.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "52a8d9bfcaafb39b9533e9d2da61ced3ec86080358347fd25504ddee6fc23b4e"
+dependencies = [
+ "arrayvec",
+]
 
 [[package]]
 name = "utf8parse"

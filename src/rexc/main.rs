@@ -1,4 +1,5 @@
-use {clap::Parser, std::path::PathBuf};
+mod parser;
+use {clap::Parser, parser::get_program, std::path::PathBuf};
 
 #[derive(Debug, Parser)]
 struct Cli {
@@ -9,6 +10,6 @@ struct Cli {
 }
 
 fn main() {
-	let _cli = Cli::parse();
-	unimplemented!();
+	let cli = Cli::parse();
+	let _program = get_program(cli.input_file);
 }
