@@ -10,4 +10,5 @@ struct Cli {
 
 fn main() {
     let _cli = Cli::parse();
+    unimplemented!();
 }

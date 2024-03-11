@@ -23,4 +23,5 @@ enum Commands {
 
 fn main() {
     let _cli = Cli::parse();
+    unimplemented!();
 }
