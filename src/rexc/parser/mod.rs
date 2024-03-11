@@ -23,5 +23,5 @@ pub fn get_program(source_filename: PathBuf) -> Result<Option<Program>, SyntaxEr
 	};
 
 	let mut parser = Parser { lexer };
-	return parser.next_program();
+	parser.next_program()
 }

@@ -14,9 +14,6 @@ pub struct Lexer<'a> {
 
 impl Lexer<'_> {
 	pub fn next_token(&mut self) -> Option<Token> {
-		match self.chars.next() {
-			Some(ch) => Some(Token::Char(ch.unwrap())),
-			None => None,
-		}
+		self.chars.next().map(|ch| Token::Char(ch.unwrap()))
 	}
 }
